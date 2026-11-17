@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Lease Break Verdict — Break the Lease or Ride It Out?</title>
+<meta name="description" content="A renter's lease-break judge: termination fee, re-rent gap rent, deposit at risk and moving costs priced against staying — plus the monthly benefit of leaving. One honest net, one seal.">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#120D08">
+<link rel="icon" href="icons/icon-32.png">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<style>
+:root{
+  --bg:#120D08; --surface:#1E150D; --surface2:#291C10; --text:#F3ECDD; --muted:#C4B294;
+  --accent:#C08040; --accent2:#7A4A22; --line:#4A341E; --bad:#D98A8A; --good:#A8C69A;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,'Times New Roman',serif;line-height:1.5}
+.wrap{max-width:1080px;margin:0 auto;padding:28px 18px 60px}
+.eyebrow{letter-spacing:.28em;text-transform:uppercase;font-size:11px;color:var(--accent);text-align:center}
+h1{font-size:clamp(34px,6vw,58px);text-align:center;margin:10px 0 6px;font-weight:600;line-height:1.05}
+.sub{text-align:center;color:var(--muted);font-style:italic;font-size:clamp(15px,2.4vw,19px);max-width:740px;margin:0 auto 8px}
+.rule{height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);margin:22px auto;max-width:640px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.grid{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;box-shadow:0 14px 32px rgba(0,0,0,.45)}
+.card h2{margin:0 0 4px;font-size:20px;color:var(--accent)}
+.card p.hint{margin:0 0 14px;color:var(--muted);font-size:13.5px;font-style:italic}
+label{display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:13px 0 5px}
+label:first-of-type{margin-top:0}
+input,select{width:100%;background:#0E0905;border:1px solid var(--line);color:var(--text);border-radius:6px;padding:10px 12px;font-family:Georgia,serif;font-size:16px}
+input:focus,select:focus{outline:1px solid var(--accent);border-color:var(--accent)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.hero{background:linear-gradient(160deg,var(--accent2),#241708 55%,var(--surface));text-align:center;padding:30px 20px}
+.seal{display:inline-flex;align-items:center;justify-content:center;width:148px;height:148px;border-radius:50%;border:3px double var(--accent);background:rgba(18,13,8,.78);color:var(--accent);font-size:18px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:14px;line-height:1.2;box-shadow:0 14px 34px rgba(0,0,0,.5)}
+.hero .big{font-size:clamp(38px,7vw,60px);color:var(--accent);margin:14px 0 2px;font-weight:700}
+.hero .per{color:var(--muted);font-style:italic}
+.quote{font-style:italic;font-size:17px;max-width:580px;margin:16px auto 0;color:var(--text)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px;text-align:left}
+.stat{background:rgba(18,13,8,.55);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.stat b{display:block;font-size:19px;color:var(--accent)}
+.stat span{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th,td{padding:8px 6px;text-align:right;border-bottom:1px solid rgba(192,128,64,.22)}
+th:first-child,td:first-child{text-align:left}
+th{color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+tr.hl td{color:var(--accent);font-weight:700}
+.barwrap{margin:14px 0 4px}
+.bar{display:flex;height:26px;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+.bar div{height:100%}
+.legend{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.7}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+button{background:var(--accent);color:#171006;border:1px solid var(--accent);border-radius:6px;padding:11px 16px;font-family:Georgia,serif;font-size:15px;font-weight:700;cursor:pointer}
+button.ghost{background:transparent;color:var(--accent)}
+button.small{padding:7px 11px;font-size:13px}
+.presets{display:flex;flex-wrap:wrap;gap:8px;margin:0 auto 20px;justify-content:center;max-width:760px}
+.note{font-size:13px;color:var(--muted);font-style:italic;margin-top:12px}
+.saved{margin-top:14px;font-size:14px}
+.saved div{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid rgba(192,128,64,.22)}
+footer{text-align:center;color:var(--muted);font-size:13px;margin-top:34px;font-style:italic}
+.pos{color:var(--good)} .neg{color:var(--bad)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">The Bull Brew · Daily Tools</div>
+  <h1>The Lease Break Verdict</h1>
+  <p class="sub">Breaking a lease is not “one fee.” It is a fee, rent while the unit sits empty, a deposit at risk, and a move — weighed against every month you would pay to stay in a place you already left in your head.</p>
+  <div class="rule"></div>
+
+  <div class="presets" id="presets"></div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>The lease you have</h2>
+      <p class="hint">What staying actually costs, month after month.</p>
+      <label>Current monthly rent ($)</label>
+      <input id="rent" type="number" value="1850" min="0" step="10">
+      <div class="row2">
+        <div><label>Months remaining</label><input id="months" type="number" value="7" min="1" max="36" step="1"></div>
+        <div><label>Monthly benefit of moving ($)</label><input id="benefit" type="number" value="350" min="0" step="10"></div>
+      </div>
+      <p class="hint" style="margin-top:10px">Benefit = raise, shorter commute, cheaper parking, sanity — priced per month you would lose it by staying. Zero is honest if there is none.</p>
+      <label>Security deposit held ($)</label>
+      <input id="deposit" type="number" value="1850" min="0" step="10">
+      <label>Deposit you expect to lose if you break ($)</label>
+      <input id="depositLost" type="number" value="300" min="0" step="10">
+    </div>
+
+    <div class="card">
+      <h2>The break itself</h2>
+      <p class="hint">What leaving early actually charges you.</p>
+      <label>Early-termination fee ($)</label>
+      <input id="fee" type="number" value="1500" min="0" step="10">
+      <div class="row2">
+        <div><label>Weeks until landlord re-rents</label><input id="weeks" type="number" value="4" min="0" max="52" step="0.5"></div>
+        <div><label>Gap rent you owe (%)</label><input id="resp" type="number" value="100" min="0" max="100" step="5"></div>
+      </div>
+      <p class="hint" style="margin-top:10px">Most landlords must try to re-rent (duty to mitigate in most states). If your fee is explicitly “in lieu of rent,” set gap responsibility to 0%.</p>
+      <div class="row2">
+        <div><label>New monthly rent ($)</label><input id="newRent" type="number" value="1650" min="0" step="10"></div>
+        <div><label>Moving cost ($)</label><input id="moving" type="number" value="900" min="0" step="10"></div>
+      </div>
+      <label>New-place fees — application / admin / broker ($)</label>
+      <input id="newFees" type="number" value="350" min="0" step="10">
+    </div>
+
+    <div class="card hero">
+      <div class="seal" id="seal">—</div>
+      <div class="big" id="netBig">$0</div>
+      <div class="per" id="netPer">net advantage of breaking, over the months left</div>
+      <p class="quote" id="quote"></p>
+      <div class="stats">
+        <div class="stat"><b id="stayTotal">$0</b><span>Cost of riding it out</span></div>
+        <div class="stat"><b id="breakTotal">$0</b><span>Cost of breaking</span></div>
+        <div class="stat"><b id="beRent">$0</b><span>Break-even new rent</span></div>
+        <div class="stat"><b id="beWeeks">—</b><span>Break-even re-rent time</span></div>
+        <div class="stat"><b id="waive">$0</b><span>Waiver that flips it</span></div>
+        <div class="stat"><b id="charges">$0</b><span>One-time break charges</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Where the money goes</h2>
+      <p class="hint">The break, itemised like a ledger. Copper is the fee, bronze is the empty-unit rent.</p>
+      <div class="barwrap"><div class="bar" id="bar"></div></div>
+      <div class="legend" id="legend"></div>
+      <table style="margin-top:14px"><tbody id="bill"></tbody></table>
+      <p class="note">Gap rent is capped at the rent left on your lease — you cannot owe empty-unit rent past the end date, however slow the re-rent.</p>
+    </div>
+
+    <div class="card">
+      <h2>If the landlord re-rents faster — or slower</h2>
+      <p class="hint">Net advantage of breaking, by weeks the unit sits empty. Your estimate is lit.</p>
+      <table><thead><tr><th>Empty for</th><th>Gap rent owed</th><th>Net of breaking</th></tr></thead><tbody id="weekTable"></tbody></table>
+    </div>
+
+    <div class="card">
+      <h2>If you negotiate the fee down</h2>
+      <p class="hint">Landlords take a clean, quick exit over a fight more often than renters think. Ask with a number.</p>
+      <table><thead><tr><th>Fee waived</th><th>Fee you pay</th><th>Net of breaking</th></tr></thead><tbody id="feeTable"></tbody></table>
+      <div class="btns">
+        <button id="saveBtn">Save this case</button>
+        <button class="ghost" id="copyBtn">Copy summary</button>
+      </div>
+      <div class="saved" id="saved"></div>
+    </div>
+  </div>
+
+  <footer>General information, not legal advice — lease-break rules, mitigation duties and fee enforceability vary by state and by lease. Read yours before you sign anything. Nothing leaves your device; saved cases live in localStorage.</footer>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const fmt=n=>{const s=n<0?'-':'';return s+'$'+Math.abs(Math.round(n)).toLocaleString('en-US');};
+const num=id=>{const v=parseFloat($(id).value);return isNaN(v)?0:v;};
+
+const PRESETS={
+ 'Job Relocation':{rent:2100,months:8,benefit:900,deposit:2100,depositLost:400,fee:2100,weeks:5,resp:100,newRent:1950,moving:1400,newFees:400},
+ 'Cheaper Place Across Town':{rent:1850,months:7,benefit:350,deposit:1850,depositLost:300,fee:1500,weeks:4,resp:100,newRent:1650,moving:900,newFees:350},
+ 'Fee In Lieu of Rent':{rent:1600,months:5,benefit:150,deposit:1600,depositLost:200,fee:3200,weeks:6,resp:0,newRent:1500,moving:700,newFees:250},
+ 'Buying a House':{rent:2300,months:9,benefit:200,deposit:2300,depositLost:500,fee:2300,weeks:4,resp:100,newRent:0,moving:1800,newFees:0}
+};
+const pwrap=$('presets');
+Object.keys(PRESETS).forEach(name=>{
+  const b=document.createElement('button');b.className='ghost small';b.textContent=name;
+  b.onclick=()=>{const p=PRESETS[name];Object.keys(p).forEach(k=>{$(k).value=p[k];});calc();};
+  pwrap.appendChild(b);
+});
+
+function model(over){
+  const v={rent:num('rent'),months:Math.max(1,num('months')),benefit:num('benefit'),depositLost:num('depositLost'),
+    fee:num('fee'),weeks:num('weeks'),resp:num('resp')/100,newRent:num('newRent'),moving:num('moving'),newFees:num('newFees')};
+  Object.assign(v,over||{});
+  const weekly=v.rent*12/52;
+  const gapRaw=weekly*v.weeks*v.resp;
+  const gap=Math.min(gapRaw, v.rent*v.months);
+  const charges=v.fee+gap+v.depositLost+v.moving+v.newFees;
+  const stay=v.rent*v.months + v.benefit*v.months;
+  const brk=charges + v.newRent*v.months;
+  const net=stay-brk;
+  const beRent=v.months>0 ? (stay-charges)/v.months : 0;
+  const netNoGap=stay-(charges-gap+v.newRent*v.months);
+  const perWeek=weekly*v.resp;
+  const beWeeks=perWeek>0 ? netNoGap/perWeek : Infinity;
+  return {v,weekly,gap,charges,stay,brk,net,beRent,beWeeks,perWeek};
+}
+
+function calc(){
+  const m=model();
+  const {v,gap,charges,stay,brk,net,beRent,beWeeks}=m;
+  let seal,quote;
+  if(net>=1000){seal='Break It';quote='The math has already left. Pay the toll, take the months back, and stop renting a place you are done with.';}
+  else if(net>=0){seal='Close Call';quote='Breaking wins, but barely. One slow re-rent or one stubborn fee flips it — negotiate before you sign the new lease.';}
+  else if(net>=-1500 && charges>0){seal='Negotiate First';quote='Staying wins on paper — by less than the break charges on the table. Get '+fmt(-net)+' waived and the verdict flips. Ask.';}
+  else{seal='Ride It Out';quote='The exit toll is too heavy for the months left. Stay, bank the difference, and let the calendar do the breaking for free.';}
+  $('seal').textContent=seal;
+  $('netBig').textContent=(net>=0?'+':'')+fmt(net).replace('$-','-$');
+  $('netBig').style.color=net>=0?'var(--accent)':'var(--bad)';
+  $('netPer').textContent='net advantage of breaking over '+v.months+' month'+(v.months===1?'':'s')+' left';
+  $('quote').textContent=quote;
+  $('stayTotal').textContent=fmt(stay);
+  $('breakTotal').textContent=fmt(brk);
+  $('beRent').textContent=fmt(Math.max(0,beRent))+'/mo';
+  $('beWeeks').textContent=(beWeeks===Infinity||beWeeks<0)?'Never':(beWeeks>=99?'99+ wks':beWeeks.toFixed(1)+' wks');
+  $('waive').textContent=net>=0?'$0 — already wins':fmt(-net);
+  $('charges').textContent=fmt(charges);
+
+  const parts=[
+    ['Termination fee',v.fee,'#C08040'],
+    ['Gap rent (empty unit)',gap,'#7A4A22'],
+    ['Deposit expected lost',v.depositLost,'#A06830'],
+    ['Moving',v.moving,'#8A5A28'],
+    ['New-place fees',v.newFees,'#5C3A1A']
+  ];
+  const tot=Math.max(1,parts.reduce((a,p)=>a+p[1],0));
+  $('bar').innerHTML=parts.map(p=>'<div style="width:'+(p[1]/tot*100)+'%;background:'+p[2]+'"></div>').join('');
+  $('legend').innerHTML=parts.map(p=>'<i style="background:'+p[2]+'"></i>'+p[0]+' '+fmt(p[1])+' &nbsp;').join('');
+  $('bill').innerHTML=
+    '<tr><td>Rent if you stay ('+v.months+' mo)</td><td>'+fmt(v.rent*v.months)+'</td></tr>'+
+    '<tr><td>Benefit of moving, lost if you stay</td><td>'+fmt(v.benefit*v.months)+'</td></tr>'+
+    '<tr><td>New rent if you break ('+v.months+' mo)</td><td>'+fmt(v.newRent*v.months)+'</td></tr>'+
+    '<tr><td>One-time break charges</td><td>'+fmt(charges)+'</td></tr>'+
+    '<tr class="hl"><td>Net advantage of breaking</td><td>'+(net>=0?'+':'')+fmt(net).replace('$-','-$')+'</td></tr>';
+
+  const wk=[0,2,4,6,8,12];
+  $('weekTable').innerHTML=wk.map(w=>{
+    const mm=model({weeks:w});
+    const hl=Math.abs(w-v.weeks)<0.01?' class="hl"':'';
+    return '<tr'+hl+'><td>'+w+' weeks</td><td>'+fmt(mm.gap)+'</td><td class="'+(mm.net>=0?'pos':'neg')+'">'+(mm.net>=0?'+':'')+fmt(mm.net).replace('$-','-$')+'</td></tr>';
+  }).join('');
+
+  const wv=[0,25,50,75,100];
+  $('feeTable').innerHTML=wv.map(p=>{
+    const mm=model({fee:v.fee*(1-p/100)});
+    return '<tr><td>'+p+'%</td><td>'+fmt(v.fee*(1-p/100))+'</td><td class="'+(mm.net>=0?'pos':'neg')+'">'+(mm.net>=0?'+':'')+fmt(mm.net).replace('$-','-$')+'</td></tr>';
+  }).join('');
+  return {seal,net,beRent,beWeeks};
+}
+
+let last=calc();
+document.querySelectorAll('input').forEach(i=>i.addEventListener('input',()=>{last=calc();}));
+
+function summary(){
+  const m=model();
+  return 'THE LEASE BREAK VERDICT — '+last.seal+'\n'+
+  'Current rent '+fmt(m.v.rent)+'/mo, '+m.v.months+' months left. New rent '+fmt(m.v.newRent)+'/mo, benefit of moving '+fmt(m.v.benefit)+'/mo.\n'+
+  'Ride it out: '+fmt(m.stay)+' · Break: '+fmt(m.brk)+' (incl. '+fmt(m.charges)+' one-time: fee '+fmt(m.v.fee)+', gap rent '+fmt(m.gap)+', deposit lost '+fmt(m.v.depositLost)+', moving '+fmt(m.v.moving)+', new fees '+fmt(m.v.newFees)+').\n'+
+  'Net advantage of breaking: '+(last.net>=0?'+':'')+fmt(last.net).replace('$-','-$')+'. Break-even new rent '+fmt(Math.max(0,m.beRent))+'/mo. Waiver that flips it: '+(last.net>=0?'$0':fmt(-last.net))+'.';
+}
+$('copyBtn').onclick=()=>{navigator.clipboard&&navigator.clipboard.writeText(summary());$('copyBtn').textContent='Copied';setTimeout(()=>$('copyBtn').textContent='Copy summary',1400);};
+
+const KEY='lease-break-verdict-v1';
+function loadSaved(){try{return JSON.parse(localStorage.getItem(KEY))||[]}catch(e){return[]}}
+function renderSaved(){
+  const s=loadSaved();
+  $('saved').innerHTML=s.length?s.map((x,i)=>'<div><span>'+x.name+' — <b>'+x.seal+'</b> '+(x.net>=0?'+':'')+fmt(x.net).replace('$-','-$')+'</span><button class="ghost small" data-del="'+i+'">Delete</button></div>').join(''):'<p class="note">No saved cases yet.</p>';
+  $('saved').querySelectorAll('[data-del]').forEach(b=>b.onclick=()=>{const a=loadSaved();a.splice(+b.dataset.del,1);localStorage.setItem(KEY,JSON.stringify(a));renderSaved();});
+}
+$('saveBtn').onclick=()=>{
+  const name=prompt('Name this case:','Unit / address');
+  if(name===null)return;
+  const a=loadSaved();a.push({name:name||'Untitled',seal:last.seal,net:Math.round(last.net),inputs:{rent:num('rent'),months:num('months'),benefit:num('benefit'),depositLost:num('depositLost'),fee:num('fee'),weeks:num('weeks'),resp:num('resp'),newRent:num('newRent'),moving:num('moving'),newFees:num('newFees')}});
+  localStorage.setItem(KEY,JSON.stringify(a));renderSaved();
+};
+renderSaved();
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}
+</script>
+</body>
+</html>
